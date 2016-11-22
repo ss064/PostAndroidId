@@ -21,11 +21,13 @@ public class AsyncHttp extends AsyncTask<String, Integer, Boolean> {
     String name;
     String id;
     String t_name;
+    String macAdd;
 
-    public AsyncHttp(String id,String name,String t_name){
+    public AsyncHttp(String id,String name,String t_name,String macAdd){
         this.name = name;
         this.id = id;
         this.t_name = t_name;
+        this.macAdd = macAdd;
     }
 
     //非同期処理ここから
@@ -49,7 +51,7 @@ public class AsyncHttp extends AsyncTask<String, Integer, Boolean> {
             urlConnection.setDoOutput(true);
 
             //POST用パラメータ
-            String postDataSample = "id="+id+"&name="+name+"&terminalname="+t_name;
+            String postDataSample = "id="+id+"&name="+name+"&terminalname="+t_name+"&macaddress="+macAdd;
             Log.d("POST",postDataSample);
 
             //POSTパラメータ設定

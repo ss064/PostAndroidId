@@ -24,12 +24,25 @@
             android:text="Large Text"
             android:id="@+id/androidid"
             android:gravity="center_horizontal" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MacAddress"
+            android:id="@+id/textView2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/MacAddress"
+            android:gravity="center_horizontal" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Name"
-            android:id="@+id/textView2" />
+            android:id="@+id/textView4" />
 
         <EditText
             android:layout_width="match_parent"
